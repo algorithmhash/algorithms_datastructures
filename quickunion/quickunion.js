@@ -1,28 +1,48 @@
 function QuickUnion(n){
     this.id = [];
+    this.count ;
 
-    for (let i = 0; i < n; i++) {
-        this.id[i] = i;
-        
+    this.constructor = function(n){
+        count = n;
+        for (let i = 0; i < n; i++) {
+            this.id[i] = i;
+            
+        }
     }
-    this.root = function(i){
-       while (i != this.id[i]) i = this.id[i];
-           return i;
+    this.count = function(){
+        return this.count;
+    }
+    this.find = function(p) {
+        return this.id[p];
     }
 
     this.connected= function(p, q) {
-        return this.root(this.p) === this.root(this.q);
+        return this.id(this.p) === this.id(this.q);
     }
 
 
     this.union = function(i, j){
-        i = this.root(this.p);
-        j = this.root(this.q);
-        this.id[i] = this.j;
+        if (this.connected(p, q)) return;
+        var pid = this.id[p];
+        for (var i = 0; i < this.id.length; i++) {
+            this.id[i] == p[id] ? this.[id] = this.id[q] : this.count--;
+        }
+       this.constructor(n);
     }
 }
 
-x = new QuickUnion(4);
-console.log(x.root(1,2,3));
-console.log(x.connected(x.root()));
-console.log(x.union(3,1,2));
+var x = new QuickUnion(n);
+console.log(x.id);
+
+var a = '2-1 3-7 6-9 3-4 6-7';
+
+a = a.split(' ');
+
+for (let b = 0; b < a.length; b++) {
+    var p = a[b].split('-')[0] | 0;
+    var q = a[j].split('-')[1] |0;
+    x.union(p,q);
+}
+
+console.log(x.id)
+console.log(x.id.toString().replace(/,/g,' '));
