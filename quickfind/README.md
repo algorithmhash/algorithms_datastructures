@@ -4,4 +4,4 @@ This algorithm is quite okay using union, initialize operations involved the for
 
 ## Con:
 
-There is a problem when approaching an issue like this. The union operation is too expensive.  If you just have N commands on N objects which is not unreasonable, then they're either connected or not then that will take a quadratic time in squared time.  Quadratic time is just too slow and the reason being is they just do not scale.
+There is a problem when approaching an issue like this. The union operation is too expensive.  If you just have N commands on N objects which is not unreasonable, then they're either connected or not, then that will take a quadratic time in squared time.  Quadratic time is just too slow and the reason being is they just do not scale.
